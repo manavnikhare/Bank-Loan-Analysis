@@ -1,118 +1,158 @@
-# 💳 Bank Loan Analysis Dashboard
+# 📊 Loan Portfolio Risk & Performance Analytics
 
-A complete Data Analytics project that analyzes bank loan data using **PostgreSQL (SQL)** and **Power BI**. The project demonstrates an end-to-end analytics workflow, from data loading and SQL-based KPI analysis to interactive dashboard creation for monitoring lending performance and customer trends.
-
----
-
-## 📌 Project Overview
-
-Financial institutions rely on data to monitor loan performance, assess portfolio quality, and understand customer borrowing patterns. This project analyzes a bank loan dataset to evaluate lending performance, repayment behavior, and borrower characteristics through SQL queries and an interactive Power BI dashboard.
+An end-to-end Data Analytics project that evaluates loan portfolio performance using **PostgreSQL** and **Power BI**. The project analyzes lending trends, portfolio health, borrower characteristics, and repayment behavior to support data-driven lending decisions through interactive dashboards and SQL-based analysis.
 
 ---
 
-## 🎯 Objectives
+# 📌 Project Overview
 
-- Analyze overall loan portfolio performance.
-- Calculate key business KPIs using SQL.
-- Compare Good Loans and Bad Loans.
-- Monitor monthly lending and repayment trends.
-- Analyze customer demographics and loan characteristics.
-- Build an interactive dashboard for business decision-making.
+Financial institutions require continuous monitoring of loan portfolios to manage lending risk, evaluate repayment performance, and identify borrower trends. This project develops an analytics solution that combines SQL-based data analysis with Power BI visualizations to provide actionable insights into portfolio performance and customer behavior.
 
 ---
 
-## 🛠️ Tech Stack
+# 🎯 Business Objectives
+
+- Monitor the overall performance of the loan portfolio.
+- Evaluate lending and repayment trends over time.
+- Compare performing and non-performing loan portfolios.
+- Analyze borrower characteristics across loan purpose, employment length, repayment term, and home ownership.
+- Build an interactive dashboard to support lending and portfolio management decisions.
+
+---
+
+# 🛠️ Tech Stack
 
 - **Database:** PostgreSQL
 - **Query Language:** SQL
 - **Visualization:** Power BI
+- **Data Preparation:** Microsoft Excel
 - **Dataset:** CSV
 - **Version Control:** Git & GitHub
 
 ---
 
-## 📂 Project Workflow
+# 📂 Project Workflow
 
-1. Performed Data cleaning using Excel.
-2. Imported the bank loan dataset into PostgreSQL.
-3. Performed SQL queries to calculate business KPIs.
-4. Analyzed loan performance and customer trends.
-5. Connected PostgreSQL with Power BI.
-6. Built an interactive dashboard to visualize lending performance.
-7. Generated business insights to support data-driven decisions.
+1. Performed initial data cleaning and validation in Microsoft Excel.
+2. Imported the dataset into PostgreSQL.
+3. Developed SQL queries to calculate key portfolio metrics and business KPIs.
+4. Connected PostgreSQL with Power BI.
+5. Designed an interactive dashboard for portfolio monitoring.
+6. Analyzed borrower behavior, portfolio distribution, and repayment performance.
+7. Generated business insights to support data-driven decision making.
 
 ---
 
-## 📊 Key Performance Indicators (KPIs)
+# 📈 Dashboard Overview
+
+### Executive Portfolio Overview
+
+Provides a high-level summary of portfolio performance including:
 
 - Total Loan Applications
-- Total Funded Amount
-- Total Amount Received
+- Portfolio Value
+- Recovery Amount
 - Average Interest Rate
-- Average Debt-to-Income (DTI) Ratio
-- Good Loan Percentage
-- Bad Loan Percentage
-- Loan Status Analysis
-- Month-to-Date (MTD) Performance
+- Average Debt-to-Income Ratio
+- Performing Portfolio
+- Non-Performing Portfolio
+- Portfolio Status Summary
 
 ---
 
-## 📈 Dashboard Features
+### Portfolio Distribution & Customer Insights
 
-- Executive KPI Summary
-- Good Loan vs Bad Loan Analysis
-- Monthly Loan Trends
-- Loan Status Distribution
-- Regional Loan Analysis
-- Loan Purpose Analysis
-- Home Ownership Analysis
-- Employee Experience Analysis
-- Interactive Filters and Slicers
+Analyzes portfolio distribution across multiple business dimensions:
 
----
-
-## 💡 Business Insights
-
-- Identified trends in loan applications and repayments.
-- Evaluated loan quality using Good Loan and Bad Loan metrics.
-- Analyzed customer segments based on home ownership, employment, and loan purpose.
-- Compared funded amounts with repayments to understand portfolio performance.
-- Created an interactive dashboard to support lending decisions.
+- Monthly Loan Application Trend
+- Regional Loan Distribution
+- Loan Distribution by Repayment Term
+- Loan Applications by Employment Length
+- Loan Applications by Loan Purpose
+- Loan Applications by Home Ownership
 
 ---
 
-## 📁 Repository Structure
+### Loan Portfolio Details
 
-```
-Bank-Loan-Analysis
-│
-├── Dataset
-│   └── financial_loan.csv
-│
-├── SQL
-│   └── financial_loan.sql
-│
-├── Dashboard
-│   └── Bank Loan Analysis.pbix
-│
-└── README.md
-```
+Provides transaction-level loan records with filters for detailed portfolio exploration.
 
+Includes:
 
-## 🚀 Skills Demonstrated
+- Loan ID
+- Issue Date
+- Loan Purpose
+- Credit Grade
+- Credit Sub-Grade
+- Home Ownership
+- Portfolio Value
+- Recovery Amount
+- Interest Rate
+- Monthly Installment
 
-- SQL Queries
+---
+
+# 📊 Key Performance Indicators (KPIs)
+
+- Total Loan Applications
+- Portfolio Value
+- Recovery Amount
+- Average Interest Rate
+- Average Debt-to-Income (DTI)
+- Performing Portfolio
+- Non-Performing Portfolio
+- Monthly-to-Date (MTD) Performance
+- Monthly-to-Monthly (MOM) Performance
+
+---
+
+# 💡 Key Business Insights
+
+- Approximately **86%** of the loan portfolio consists of performing loans, indicating a healthy repayment profile.
+- Debt Consolidation represents the largest share of loan applications.
+- Most borrowers prefer longer repayment terms, with **60-month loans** accounting for the majority of applications.
+- Borrowers with over **10 years of employment** contribute the highest number of loan applications.
+- Portfolio analysis enables better visibility into lending trends and borrower characteristics across different customer segments.
+
+---
+
+# 🚀 Skills Demonstrated
+
 - Data Cleaning
+- SQL Query Writing
+- Business KPI Development
 - Data Analysis
-- KPI Development
 - Business Intelligence
 - Dashboard Design
 - PostgreSQL
 - Power BI
 - Data Visualization
+- Analytical Storytelling
 
 ---
 
-## 📌 Conclusion
+# 📁 Repository Structure
 
-This project demonstrates an end-to-end data analytics workflow by combining SQL for data analysis and Power BI for visualization. It highlights how business metrics and interactive dashboards can be used to monitor loan performance, evaluate lending quality, and support data-driven decision-making.
+```
+Loan-Portfolio-Risk-and-Performance-Analytics
+│
+├── Dataset
+│   └── loan_portfolio_data.csv
+│
+├── SQL
+│   └── loan_portfolio_analysis.sql
+│
+├── Dashboard
+│   └── Loan Portfolio Risk & Performance Analytics.pbix
+│
+└── README.md
+
+```
+
+---
+
+# 📌 Conclusion
+
+This project demonstrates an end-to-end analytics workflow by integrating PostgreSQL for data analysis with Power BI for interactive visualization. The dashboard provides a comprehensive view of portfolio performance, borrower characteristics, and lending trends, enabling stakeholders to monitor portfolio health and support data-driven lending decisions.
+
+--- for data analysis and Power BI for visualization. It highlights how business metrics and interactive dashboards can be used to monitor loan performance, evaluate lending quality, and support data-driven decision-making.
